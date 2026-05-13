@@ -1,333 +1,376 @@
 <!DOCTYPE html>
 
-<html class="light" lang="es"><head>
+<html class="light scroll-smooth" lang="es"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Franky's Bakery | Dulzura Artesanal</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&amp;family=Be+Vietnam+Pro:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<style>
-    .material-symbols-outlined {
-      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-    }
-    .leader-line {
-      flex-grow: 1;
-      border-bottom: 1px dotted #7e766c;
-      margin: 0 8px 4px 8px;
-    }
-    .artisanal-shadow {
-      box-shadow: 0 20px 40px -10px rgba(77, 14, 19, 0.08);
-    }
-  </style>
 <script id="tailwind-config">
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          "colors": {
-            "surface-dim": "#e1d8d4",
-            "on-primary-fixed-variant": "#524532",
-            "on-secondary-fixed": "#3e030a",
-            "tertiary-fixed": "#e5e2de",
-            "on-tertiary-container": "#545350",
-            "on-primary": "#ffffff",
-            "on-secondary": "#ffffff",
-            "on-surface-variant": "#4d463d",
-            "primary": "#6b5c48",
-            "surface-container-highest": "#e9e1dc",
-            "primary-fixed-dim": "#d7c3ab",
-            "on-tertiary": "#ffffff",
-            "surface-variant": "#e9e1dc",
-            "on-tertiary-fixed": "#1c1c1a",
-            "error-container": "#ffdad6",
-            "secondary-fixed": "#ffdad8",
-            "on-primary-container": "#5f513e",
-            "on-surface": "#1e1b18",
-            "surface-bright": "#fff8f5",
-            "on-secondary-container": "#792f31",
-            "secondary-container": "#ff9a9a",
-            "surface-container-lowest": "#ffffff",
-            "surface-container-high": "#efe6e2",
-            "tertiary": "#5f5e5b",
-            "on-secondary-fixed-variant": "#782f31",
-            "outline-variant": "#d0c5ba",
-            "on-primary-fixed": "#241a0a",
-            "background": "#fff8f5",
-            "on-error-container": "#93000a",
-            "secondary-fixed-dim": "#ffb3b2",
-            "error": "#ba1a1a",
-            "inverse-on-surface": "#f8efea",
-            "inverse-surface": "#34302c",
-            "tertiary-container": "#c9c7c3",
-            "on-background": "#1e1b18",
-            "outline": "#7e766c",
-            "on-error": "#ffffff",
-            "surface": "#fff8f5",
-            "surface-container": "#f5ece7",
-            "on-tertiary-fixed-variant": "#474744",
-            "secondary": "#964647",
-            "primary-fixed": "#f4dfc6",
-            "surface-tint": "#6b5c48",
-            "inverse-primary": "#d7c3ab",
-            "primary-container": "#d8c4ac",
-            "surface-container-low": "#fbf2ed",
-            "tertiary-fixed-dim": "#c8c6c2"
-          },
-          "borderRadius": {
-            "DEFAULT": "0.25rem",
-            "lg": "0.5rem",
-            "xl": "0.75rem",
-            "full": "9999px"
-          },
-          "spacing": {
-            "margin-desktop": "64px",
-            "unit": "8px",
-            "margin-mobile": "20px",
-            "container-max": "1280px",
-            "gutter": "24px"
-          },
-          "fontFamily": {
-            "body-lg": ["Be Vietnam Pro"],
-            "label-md": ["Be Vietnam Pro"],
-            "caption": ["Be Vietnam Pro"],
-            "headline-md": ["EB Garamond"],
-            "display-lg": ["EB Garamond"],
-            "headline-lg": ["EB Garamond"],
-            "body-md": ["Be Vietnam Pro"],
-            "headline-lg-mobile": ["EB Garamond"]
-          },
-          "fontSize": {
-            "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-            "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
-            "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
-            "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "500"}],
-            "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
-            "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "500"}],
-            "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
-            "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}]
-          }
-        },
-      },
-    }
-  </script>
-</head>
-<body class="bg-background text-on-surface selection:bg-primary-container selection:text-on-primary-container">
-<!-- TopNavBar Section -->
-<nav class="bg-surface/90 dark:bg-surface-container-highest/90 docked full-width top-0 sticky backdrop-blur-md border-b border-outline-variant/30 shadow-sm z-50">
-<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
-<div class="flex items-center gap-4">
-<span class="font-headline-md text-headline-md text-secondary dark:text-secondary-fixed">Franky's Bakery</span>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed-dim": "#c8c6c2",
+                        "tertiary-fixed": "#e5e2de",
+                        "secondary-fixed-dim": "#ffb3b2",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "tertiary": "#5f5e5b",
+                        "tertiary-container": "#c9c7c3",
+                        "surface": "#fff8f5",
+                        "primary-container": "#d8c4ac",
+                        "on-tertiary-fixed-variant": "#474744",
+                        "on-primary-fixed-variant": "#524532",
+                        "on-primary-fixed": "#241a0a",
+                        "surface-container-highest": "#e9e1dc",
+                        "on-secondary": "#ffffff",
+                        "outline-variant": "#d0c5ba",
+                        "outline": "#7e766c",
+                        "surface-container": "#f5ece7",
+                        "on-tertiary": "#ffffff",
+                        "on-background": "#1e1b18",
+                        "inverse-primary": "#d7c3ab",
+                        "background": "#fff8f5",
+                        "inverse-on-surface": "#f8efea",
+                        "secondary-fixed": "#ffdad8",
+                        "on-secondary-container": "#792f31",
+                        "on-secondary-fixed": "#3e030a",
+                        "on-primary-container": "#5f513e",
+                        "inverse-surface": "#34302c",
+                        "surface-container-low": "#fbf2ed",
+                        "on-error-container": "#93000a",
+                        "primary-fixed": "#f4dfc6",
+                        "surface-dim": "#e1d8d4",
+                        "surface-variant": "#e9e1dc",
+                        "on-tertiary-container": "#545350",
+                        "on-surface-variant": "#4d463d",
+                        "secondary": "#964647",
+                        "on-tertiary-fixed": "#1c1c1a",
+                        "surface-container-high": "#efe6e2",
+                        "surface-bright": "#fff8f5",
+                        "secondary-container": "#ff9a9a",
+                        "on-surface": "#1e1b18",
+                        "on-secondary-fixed-variant": "#782f31",
+                        "primary-fixed-dim": "#d7c3ab",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#6b5c48",
+                        "primary": "#6b5c48",
+                        "on-error": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-desktop": "64px",
+                        "container-max": "1280px",
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["EB Garamond"],
+                        "headline-lg-mobile": ["EB Garamond"],
+                        "headline-lg": ["EB Garamond"],
+                        "caption": ["Be Vietnam Pro"],
+                        "headline-md": ["EB Garamond"],
+                        "body-md": ["Be Vietnam Pro"],
+                        "label-md": ["Be Vietnam Pro"],
+                        "body-lg": ["Be Vietnam Pro"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                        "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                        "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .leader-line {
+            flex-grow: 1;
+            border-bottom: 1px dotted #7e766c;
+            margin: 0 8px;
+            margin-bottom: 6px;
+        }
+        .card-shadow {
+            box-shadow: 0 10px 30px -10px rgba(77, 14, 19, 0.08);
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}[type='text'],input:where(:not([type])),[type='email'],[type='url'],[type='password'],[type='number'],[type='date'],[type='datetime-local'],[type='month'],[type='search'],[type='tel'],[type='time'],[type='week'],[multiple],textarea,select{-webkit-appearance:none;appearance:none;background-color:#fff;border-color:#6b7280;border-width:1px;border-radius:0px;padding-top:0.5rem;padding-right:0.75rem;padding-bottom:0.5rem;padding-left:0.75rem;font-size:1rem;line-height:1.5rem;--tw-shadow:0 0 #0000;}[type='text']:focus, input:where(:not([type])):focus, [type='email']:focus, [type='url']:focus, [type='password']:focus, [type='number']:focus, [type='date']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='week']:focus, [multiple]:focus, textarea:focus, select:focus{outline:2px solid transparent;outline-offset:2px;--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:#2563eb;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);border-color:#2563eb}input::placeholder,textarea::placeholder{color:#6b7280;opacity:1}::-webkit-datetime-edit-fields-wrapper{padding:0}::-webkit-date-and-time-value{min-height:1.5em;text-align:inherit}::-webkit-datetime-edit{display:inline-flex}::-webkit-datetime-edit,::-webkit-datetime-edit-year-field,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute-field,::-webkit-datetime-edit-second-field,::-webkit-datetime-edit-millisecond-field,::-webkit-datetime-edit-meridiem-field{padding-top:0;padding-bottom:0}select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");background-position:right 0.5rem center;background-repeat:no-repeat;background-size:1.5em 1.5em;padding-right:2.5rem;print-color-adjust:exact}[multiple],[size]:where(select:not([size="1"])){background-image:initial;background-position:initial;background-repeat:unset;background-size:initial;padding-right:0.75rem;print-color-adjust:unset}[type='checkbox'],[type='radio']{-webkit-appearance:none;appearance:none;padding:0;print-color-adjust:exact;display:inline-block;vertical-align:middle;background-origin:border-box;-webkit-user-select:none;user-select:none;flex-shrink:0;height:1rem;width:1rem;color:#2563eb;background-color:#fff;border-color:#6b7280;border-width:1px;--tw-shadow:0 0 #0000}[type='checkbox']{border-radius:0px}[type='radio']{border-radius:100%}[type='checkbox']:focus,[type='radio']:focus{outline:2px solid transparent;outline-offset:2px;--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);--tw-ring-offset-width:2px;--tw-ring-offset-color:#fff;--tw-ring-color:#2563eb;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}[type='checkbox']:checked,[type='radio']:checked{border-color:transparent;background-color:currentColor;background-size:100% 100%;background-position:center;background-repeat:no-repeat}[type='checkbox']:checked{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");}@media (forced-colors: active) {[type='checkbox']:checked{-webkit-appearance:auto;appearance:auto}}[type='radio']:checked{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");}@media (forced-colors: active) {[type='radio']:checked{-webkit-appearance:auto;appearance:auto}}[type='checkbox']:checked:hover,[type='checkbox']:checked:focus,[type='radio']:checked:hover,[type='radio']:checked:focus{border-color:transparent;background-color:currentColor}[type='checkbox']:indeterminate{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8h8'/%3e%3c/svg%3e");border-color:transparent;background-color:currentColor;background-size:100% 100%;background-position:center;background-repeat:no-repeat;}@media (forced-colors: active) {[type='checkbox']:indeterminate{-webkit-appearance:auto;appearance:auto}}[type='checkbox']:indeterminate:hover,[type='checkbox']:indeterminate:focus{border-color:transparent;background-color:currentColor}[type='file']{background:unset;border-color:inherit;border-width:0;border-radius:0;padding:0;font-size:unset;line-height:inherit}[type='file']:focus{outline:1px solid ButtonText;outline:1px auto -webkit-focus-ring-color}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.-bottom-6{bottom:-1.5rem}.-left-12{left:-3rem}.-right-6{right:-1.5rem}.-top-12{top:-3rem}.top-0{top:0px}.z-0{z-index:0}.z-10{z-index:10}.z-20{z-index:20}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mt-12{margin-top:3rem}.mt-16{margin-top:4rem}.mt-6{margin-top:1.5rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-1{height:0.25rem}.h-12{height:3rem}.h-14{height:3.5rem}.h-16{height:4rem}.h-6{height:1.5rem}.h-64{height:16rem}.h-\[500px\]{height:500px}.h-full{height:100%}.min-h-\[400px\]{min-height:400px}.min-h-\[870px\]{min-height:870px}.w-12{width:3rem}.w-16{width:4rem}.w-24{width:6rem}.w-6{width:1.5rem}.w-64{width:16rem}.w-auto{width:auto}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-container-max{max-width:1280px}.max-w-xl{max-width:36rem}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-12{gap:3rem}.gap-16{gap:4rem}.gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-8{gap:2rem}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-\[40px\]{border-radius:40px}.rounded-full{border-radius:9999px}.border{border-width:1px}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-l-4{border-left-width:4px}.border-t{border-top-width:1px}.border-outline-variant{--tw-border-opacity:1;border-color:rgb(208 197 186 / var(--tw-border-opacity, 1))}.border-outline-variant\/20{border-color:rgb(208 197 186 / 0.2)}.border-outline-variant\/30{border-color:rgb(208 197 186 / 0.3)}.border-primary-container{--tw-border-opacity:1;border-color:rgb(216 196 172 / var(--tw-border-opacity, 1))}.border-secondary{--tw-border-opacity:1;border-color:rgb(150 70 71 / var(--tw-border-opacity, 1))}.bg-primary-container{--tw-bg-opacity:1;background-color:rgb(216 196 172 / var(--tw-bg-opacity, 1))}.bg-primary-container\/20{background-color:rgb(216 196 172 / 0.2)}.bg-primary-container\/30{background-color:rgb(216 196 172 / 0.3)}.bg-secondary{--tw-bg-opacity:1;background-color:rgb(150 70 71 / var(--tw-bg-opacity, 1))}.bg-surface{--tw-bg-opacity:1;background-color:rgb(255 248 245 / var(--tw-bg-opacity, 1))}.bg-surface-container{--tw-bg-opacity:1;background-color:rgb(245 236 231 / var(--tw-bg-opacity, 1))}.bg-surface-container-high{--tw-bg-opacity:1;background-color:rgb(239 230 226 / var(--tw-bg-opacity, 1))}.bg-surface-container-low{--tw-bg-opacity:1;background-color:rgb(251 242 237 / var(--tw-bg-opacity, 1))}.bg-surface\/90{background-color:rgb(255 248 245 / 0.9)}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.from-surface{--tw-gradient-from:#fff8f5 var(--tw-gradient-from-position);--tw-gradient-to:rgb(255 248 245 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-surface\/80{--tw-gradient-to:rgb(255 248 245 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), rgb(255 248 245 / 0.8) var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.fill-current{fill:currentColor}.object-cover{object-fit:cover}.p-12{padding:3rem}.p-8{padding:2rem}.px-12{padding-left:3rem;padding-right:3rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.px-margin-mobile{padding-left:20px;padding-right:20px}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-24{padding-top:6rem;padding-bottom:6rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-1{padding-bottom:0.25rem}.pl-6{padding-left:1.5rem}.pt-20{padding-top:5rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.font-body-lg{font-family:Be Vietnam Pro}.font-body-md{font-family:Be Vietnam Pro}.font-display-lg{font-family:EB Garamond}.font-headline-lg{font-family:EB Garamond}.font-headline-md{font-family:EB Garamond}.font-label-md{font-family:Be Vietnam Pro}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-\[20px\]{font-size:20px}.text-body-lg{font-size:18px;line-height:1.6;font-weight:400}.text-body-md{font-size:16px;line-height:1.5;font-weight:400}.text-display-lg{font-size:56px;line-height:1.1;letter-spacing:-0.02em;font-weight:600}.text-headline-lg{font-size:40px;line-height:1.2;font-weight:500}.text-headline-md{font-size:28px;line-height:1.3;font-weight:500}.text-label-md{font-size:14px;line-height:1.2;letter-spacing:0.05em;font-weight:600}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-\[0\.2em\]{letter-spacing:0.2em}.tracking-widest{letter-spacing:0.1em}.text-on-background{--tw-text-opacity:1;color:rgb(30 27 24 / var(--tw-text-opacity, 1))}.text-on-primary-container{--tw-text-opacity:1;color:rgb(95 81 62 / var(--tw-text-opacity, 1))}.text-on-secondary{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-on-surface{--tw-text-opacity:1;color:rgb(30 27 24 / var(--tw-text-opacity, 1))}.text-on-surface-variant{--tw-text-opacity:1;color:rgb(77 70 61 / var(--tw-text-opacity, 1))}.text-secondary{--tw-text-opacity:1;color:rgb(150 70 71 / var(--tw-text-opacity, 1))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.decoration-secondary\/30{-webkit-text-decoration-color:rgb(150 70 71 / 0.3);text-decoration-color:rgb(150 70 71 / 0.3)}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.ring-8{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(8px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.ring-primary-container\/20{--tw-ring-color:rgb(216 196 172 / 0.2)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.duration-500{transition-duration:500ms}.duration-700{transition-duration:700ms}.hover\:-translate-y-2:hover{--tw-translate-y:-0.5rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-secondary:hover{--tw-border-opacity:1;border-color:rgb(150 70 71 / var(--tw-border-opacity, 1))}.hover\:bg-secondary:hover{--tw-bg-opacity:1;background-color:rgb(150 70 71 / var(--tw-bg-opacity, 1))}.hover\:bg-secondary\/5:hover{background-color:rgb(150 70 71 / 0.05)}.hover\:text-on-secondary:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:text-secondary:hover{--tw-text-opacity:1;color:rgb(150 70 71 / var(--tw-text-opacity, 1))}.hover\:opacity-90:hover{opacity:0.9}.hover\:shadow-xl:hover{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.active\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-110{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:bg-secondary{--tw-bg-opacity:1;background-color:rgb(150 70 71 / var(--tw-bg-opacity, 1))}.group:hover .group-hover\:text-on-secondary{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.group:hover .group-hover\:ring-primary-container\/40{--tw-ring-color:rgb(216 196 172 / 0.4)}@media (min-width: 768px){.md\:flex{display:flex}.md\:hidden{display:none}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:items-start{align-items:flex-start}.md\:p-20{padding:5rem}.md\:px-margin-desktop{padding-left:64px;padding-right:64px}.md\:text-left{text-align:left}}@media (min-width: 1024px){.lg\:block{display:block}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}}</style></head>
+<body class="bg-surface text-on-background font-body-md antialiased" data-mode="connect">
+<header class="bg-surface/90 backdrop-blur-md fixed top-0 w-full z-50 border-b border-outline-variant/30 shadow-sm">
+<nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-2">
+<img alt="Franky's Bakery Logo" class="h-12 w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCb6q9bfPBzNCAxPUd6fq-Pb8_GNbHTX5Oif70G-WFYGCfq7cBg8wNFiS_s0hGx2LM4J16hCOXl6s8CEdGERzOEAitUcn_F73wmtbY-prpWmgzdsEIbaVR4VVEx9GVbZ2qH1AqE4Xjwf3JSSq3HGDo9fS2QLxZjy9Lg9C9AaPwrM2bv37FRRsAwSgX6AU1l8JjlKZ0jze0VBb3bh79q5UzWZyO7mey6xXoHcnO-xTpNtzwKRC4lvIpzzQgNw4o2CGdLouWhggZBvM0z"/>
 </div>
-<div class="hidden md:flex items-center gap-8">
-<a class="text-secondary font-semibold border-b-2 border-secondary pb-1 font-body-md text-body-md" href="#essence">Our Essence</a>
-<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#menu">Menu</a>
-<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#custom">Custom Orders</a>
-<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#contact">Contact</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-secondary font-semibold border-b-2 border-secondary pb-1 font-body-md text-body-md" href="#hero">Inicio</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#carta">Carta</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#nosotros">Nosotros</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#contacto">Contáctenos</a>
+<a class="bg-secondary text-on-secondary px-6 py-2.5 rounded-full font-label-md text-label-md shadow-sm hover:opacity-90 transition-all active:scale-95 inline-block" href="#carta">Ver carta</a>
 </div>
-<button class="bg-secondary text-on-secondary px-6 py-2.5 rounded-full font-label-md text-label-md shadow-sm active:scale-95 transition-transform hover:bg-secondary/90" onclick="location.href='#contact'">
-        Order Now
-      </button>
-</div>
+<button class="md:hidden text-secondary">
+<span class="material-symbols-outlined">menu</span>
+</button>
 </nav>
-<!-- Hero Section -->
-<section class="relative min-h-[85vh] flex items-center overflow-hidden pt-16">
+</header>
+<main>
+<section class="relative min-h-[870px] flex items-center pt-20 overflow-hidden" data-stitch-vh="min-h-[870px]===min-h-[85vh]" id="hero">
 <div class="absolute inset-0 z-0">
-<img class="w-full h-full object-cover" data-alt="A luxurious close-up of a multi-tiered artisanal cake decorated with delicate fresh berries and edible gold leaf. The lighting is warm and natural, casting soft shadows on a cream-colored linen surface. The overall mood is sophisticated and warm, perfectly capturing the high-end patisserie aesthetic of Franky's Bakery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAw9vtKRluWvMmBsbXqHQvJgMpHxsBg4rT-ea_YAyxm_68leYvPKJnUlqSEjPrCBuKCYK292K75uy7gsBqtD70ANNNzznRT6GnJNAOPH1vlFN5rLteE9aa2RrZ6F89Ps1y5TBZJrfMUa-vbLoe2vSNfUc2k7_zAdLndtXo5Sg6FdhBVC1ShwwRGcSpwe1StsY5u5eeB-g7hsFTQ9nalk0R_gDlrJ1EXBJFEio2iv9wTt4U36Y6Nhr4z-kufWK9iAorhogTZtQqdsWIH"/>
-<div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
+<img class="w-full h-full object-cover" data-alt="A close-up, high-resolution lifestyle photograph of a luxurious multi-layered vanilla sponge cake topped with delicate whipped cream and fresh strawberries. The scene is set in a warm, sunlit kitchen with a soft, out-of-focus background of artisanal baking tools. The lighting is golden and natural, creating a cozy and premium homemade feel. The color palette is dominated by soft creams, warm beiges, and vibrant berry reds, perfectly aligning with a modern tactile aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKI9OWiuMmMZcpSxCv5QR29AQluOFbXrncXXbCWR_r06mAbrCNaJwe2TifRcsb79on-D_H9P42F16QuPi64d_s4hVKbPyDQqkeAw1ySR_24ENR1mGXtBiLAEyJXMdOiA018yLBgCmsuT7omc7_UYHx9cLQZZ5D9LAij-H52u3jI4Gf4BvSitf4bikfCVnYpihXVmrRmCSA2mxPyjHv24DA3JmE3N1zjC8vQw2Tx493Af32tkzGDKB-o1dgRjppPIRTrCiidkAu1-eF"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/80 to-transparent"></div>
 </div>
-<div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<div class="relative z-10 w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
 <div class="max-w-2xl">
-<img alt="Franky's Bakery Logo" class="w-48 mb-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4c_NQVXe_fXxRhEZ57bIQX7pcUbcusCR60FL1vqXoA3iR-FjEiJBKM17NJv36M0OahvlKS4a_CXkjjMQVhCcIKSroUjCFRyDhpp5DMJb7D1B_KaesgniXXrywUosuY_hfT1uxIwXPEFlogc9kQzBhO7NG6XconwcJePfJX8J47pYsGHkPy3OrjFGq4xxcBd2KCcnPXTb0afTbhwOa_7DDB133294itbAcTPWwhtuN_70x1DuiUPN1CjNVMDatkSpy_vrXp-ztHlfR"/>
-<h1 class="font-display-lg text-display-lg text-on-surface mb-6 leading-tight">
-          Repostería artesanal <span class="italic text-secondary">con corazón</span>
-</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-md">
-          Delicias horneadas lentamente con ingredientes de primera calidad, creadas para celebrar los momentos más dulces de la vida.
-        </p>
+<h1 class="font-display-lg text-display-lg text-on-background mb-6">Dulzura artesanal para cada momento</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 leading-relaxed">
+                        En Franky's Bakery, cada postre es una historia de amor horneada lentamente. Utilizamos ingredientes seleccionados para crear experiencias que abrazan el alma.
+                    </p>
 <div class="flex flex-wrap gap-4">
-<button class="bg-secondary text-on-secondary px-10 py-4 rounded-full font-label-md text-label-md artisanal-shadow hover:scale-105 transition-all" onclick="location.href='#contact'">
-            Hacer un Pedido
-          </button>
-<button class="border-2 border-secondary text-secondary px-10 py-4 rounded-full font-label-md text-label-md hover:bg-secondary/5 transition-all" onclick="location.href='#menu'">
-            Ver el Menú
-          </button>
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-full font-label-md text-label-md shadow-lg hover:shadow-xl transition-all active:scale-95">
+                            Explorar postres
+                        </button>
+<button class="border-2 border-secondary text-secondary px-8 py-4 rounded-full font-label-md text-label-md hover:bg-secondary/5 transition-all">
+                            Nuestra Historia
+                        </button>
 </div>
 </div>
 </div>
 </section>
-<!-- Our Essence Section -->
-<section class="py-24 bg-surface-container-low overflow-hidden" id="essence">
-<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-<div class="grid md:grid-cols-2 gap-20 items-center">
-<div class="relative">
-<div class="aspect-[4/5] rounded-t-[10rem] overflow-hidden artisanal-shadow">
-<img class="w-full h-full object-cover" data-alt="A master baker's hands dusted with flour as they gently knead soft dough on a rustic wooden countertop. The scene is illuminated by the golden morning light of a traditional bakery, emphasizing the artisanal and tactile nature of the work. The color palette is warm with beige and earthy brown tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXwOaGbvHEzi9h4yiom-I0t_MDqAWtANd5ysH1YqP2FK1Bqe8ofpYfHNCSJCCHw_xSkalMnfbvoYBosyr5CYuUNpYVahRfdjyLn97bXS924N8EKNY_xAUk6-5nL90gNZImNWv5ZJrhHXONUe5IkI4vDubTm9qwS7rQljhOrgeYlg9FfWO1-rM5g3Ft1WWIyAe2UHP_Bpk6fwiyUFK2LPekuJSS4-7Ifmm7tf3P1iioKaGTL2fx-Fnwgze9IEEExR4E7RCGncd2b5dV"/>
-</div>
-<div class="absolute -bottom-10 -right-10 w-48 h-48 bg-primary-container rounded-full flex items-center justify-center p-6 text-center artisanal-shadow">
-<span class="font-headline-md text-headline-md text-on-primary-container italic">Desde 1994</span>
-</div>
-</div>
-<div class="space-y-8">
-<div>
-<span class="font-label-md text-label-md text-secondary tracking-widest mb-4 block">NUESTRA ESENCIA</span>
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">Confianza, Cercanía y Dedicación</h2>
-</div>
-<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-            En Franky's Bakery, cada receta cuenta una historia. No somos solo una pastelería; somos un refugio de sabor donde la tradición se encuentra con la innovación. 
-          </p>
-<div class="grid grid-cols-1 gap-6 pt-6">
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-secondary text-3xl">favorite</span>
-<div>
-<h4 class="font-label-md text-label-md text-on-surface mb-1">Dedicación Pura</h4>
-<p class="font-body-md text-body-md text-on-surface-variant">Cada pieza es única, hecha a mano con paciencia y amor.</p>
-</div>
-</div>
-<div class="flex items-start gap-4">
-<span class="material-symbols-outlined text-secondary text-3xl">local_florist</span>
-<div>
-<h4 class="font-label-md text-label-md text-on-surface mb-1">Ingredientes Frescos</h4>
-<p class="font-body-md text-body-md text-on-surface-variant">Seleccionamos lo mejor de la tierra para garantizar un sabor inigualable.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Featured Delights Gallery -->
-<section class="py-24 bg-background" id="menu">
+<section class="py-24 bg-surface" id="carta">
 <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center mb-16">
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Nuestros Caprichos Destacados</h2>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Una selección de nuestras creaciones más queridas, preparadas diariamente en nuestro obrador.</p>
+<h2 class="font-headline-lg text-headline-lg text-secondary mb-4">Nuestra Carta</h2>
+<div class="w-24 h-1 bg-primary-container mx-auto rounded-full"></div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-6 max-w-xl mx-auto italic">
+                    Descubre el bocado perfecto para cada uno de tus estados de ánimo.
+                </p>
 </div>
-<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-3 gap-gutter">
-<!-- Card 1 -->
-<div class="group cursor-pointer">
-<div class="aspect-square overflow-hidden rounded-2xl mb-6 bg-surface-container-high transition-all duration-500 group-hover:artisanal-shadow group-hover:-translate-y-2">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A decadent dark chocolate cake topped with glossy ganache and fresh raspberries. The cake sits on a marble pedestal, photographed with high contrast and moody, warm lighting that highlights the textures of the sponge and glaze. The style is elegant and sophisticated for a high-end bakery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzcaQovGemU5JqqC_Sk6VTVNh05rIvZAN3KvDVtE3Sc1Jk0yEMJxFn_J6PwDKVifISZaIW9yw1jgXAmtHP5_qGPgNrrWs1MDoptFQ2cv7fD8XeIMsoKWtZMyvDV8R8VCfKdWusIRC0H6zEWjSZMQRmfJFYSxXK4Hx8QJ_wmshW6swkcESkt_8enZCjuDc24x8RLpU9FjOkl0hONElIUm-jYJcKZ1hZWiduHLMvvR4JTkWYY05q23SxjImKQ-xOTFM85MhdK404Ji3R"/>
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+<div class="group flex flex-col items-center text-center">
+<div class="w-64 h-64 rounded-full overflow-hidden mb-8 ring-8 ring-primary-container/20 group-hover:ring-primary-container/40 transition-all duration-500">
+<img alt="Artisanal lemon pie with toasted meringue peaks" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF0FfxGBeYeW_qSpnm0cIdWiY9SZ75uTU8NryuDskAJ4-Lsxh74FW4V-znOj2rCJat6-rJp-uZB79U8vdFZjO768CUKBJjTt_AI4qyIU-oQf1LQK7qgYw_E1LSSJmQoheJ93M9vo6-KRi7ULaQtx88J4n89MeBU2R8sYFQlRP51CTQsoA98E2Obtadt6FD1-vdn5zbQApwIebkrVVOrsw0tl1m9Ypp6CJBY9Pk6aL5-Yv1xMx-dXkMnIWaycJOUjNjz1Ql_6HGAnjD"/>
 </div>
-<div class="flex items-center">
-<h3 class="font-headline-md text-headline-md text-on-surface">Tarta de Trufa Negra</h3>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest mb-2">Modo relajado</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-3">Pie de Limón</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 px-4">Cremoso y refrescante, con el equilibrio perfecto entre dulzura y acidez.</p>
+<div class="flex gap-3">
+<span class="bg-primary-container/30 text-on-primary-container px-4 py-1.5 rounded-full font-label-md text-label-md">Pequeño</span>
+<span class="bg-primary-container/30 text-on-primary-container px-4 py-1.5 rounded-full font-label-md text-label-md">Grande</span>
+</div>
+</div>
+<div class="group flex flex-col items-center text-center">
+<div class="w-64 h-64 rounded-full overflow-hidden mb-8 ring-8 ring-primary-container/20 group-hover:ring-primary-container/40 transition-all duration-500">
+<img alt="Brownie" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgFx2c2WpdzZ1Jr5SrLQleAaYPifOAuaAfnDyJrDQMgL3OCYKpeEf-g9BTh9du1MA1m-GPMY4WOFlsytPQgmj8KjgVMrnAyEeC5eIciSjAKwvB_nbIJxZh3_fX_AbGqnhW23e6RXqUoaMeK_KAulX48OJD9r95XWehwNvE_rY-LxypNy9DvAzlXihgdJX78diqH_74k96VSA2dzuMDw9z2ftlhWzsRN0_rXF5FEz9--cI62NUts4XHou1VHPzCAypfVGSAABMm4dCP"/>
+</div>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest mb-2">Modo "me lo merezco"</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-3">Brownie</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 px-4">Denso, húmedo y lleno de chocolate, el gusto perfecto para premiarte hoy.</p>
+<div class="flex gap-3">
+<span class="bg-primary-container/30 text-on-primary-container px-4 py-1.5 rounded-full font-label-md text-label-md">Pequeño</span>
+<span class="bg-primary-container/30 text-on-primary-container px-4 py-1.5 rounded-full font-label-md text-label-md">Grande</span>
+</div>
+</div>
+<div class="group flex flex-col items-center text-center">
+<div class="w-64 h-64 rounded-full overflow-hidden mb-8 ring-8 ring-primary-container/20 group-hover:ring-primary-container/40 transition-all duration-500">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" data-alt="A spectacular custom three-tier celebration cake decorated with intricate pastel-colored buttercream flowers and elegant gold leaf accents. The cake is displayed on a rustic wooden stand in a bright, airy bakery studio. Soft side-lighting highlights the creamy textures and artisanal details of the frosting. The overall mood is festive yet sophisticated, emphasizing handcrafted luxury for special occasions." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzl3rf0bw1A_8aLszHvfO9G_mo49x3XY67Z1v-FxAam9Lo4K4O31p3Dtp-_K4X6x7B9u0cCPWGF4tcfSboQbLwFO-QrIljvQNxEIWgFCk5Q429a3nkx2dXysJHV_pjNTDE90uFkQXZdtu9I3JoODDIdtbj3Y-IEaaSiijkP_WCYA9nTBjnaCtF6dPj5E7avCvnnQgeXMD0hsAoScC_JILK2SmQSJ_wgxvu169uaw6iRAfrQ5LOmwliVvgUc_ki7xHSCNo22Y884rTl"/>
+</div>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest mb-2">Modo Celebración</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-3">Torta personalizada</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 px-4">Diseños únicos que transforman tus sueños en una deliciosa realidad.</p>
+<div class="flex gap-3">
+<span class="bg-primary-container/30 text-on-primary-container px-4 py-1.5 rounded-full font-label-md text-label-md">Pequeño</span>
+<span class="bg-primary-container/30 text-on-primary-container px-4 py-1.5 rounded-full font-label-md text-label-md">Grande</span>
+</div>
+</div>
+<div class="group flex flex-col items-center text-center">
+<div class="w-64 h-64 rounded-full overflow-hidden mb-8 ring-8 ring-primary-container/20 group-hover:ring-primary-container/40 transition-all duration-500">
+<img alt="Cheesecake de fresa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1nkp4sDoaCNL6eAA6rVv3lkVxXXod9HQpsrl7lj9gHCZ9oqBduVqjd0n1J3IJ4E88ZTNXjpFF0kLent0SyiTQ5EcUNTK2Pwzou5nC7ulcdgrUpCH_H2T6hoC9JsXBj1h-k1kilkWAoioMrIIQG2NBVApCoyO_c24vw5bbR74Z2BpgvSVCH6smw9s04_0mHiyk6LEl4l_Nq8aPYqeTKZRkaQuXJYuCAt-H8wh4_ofJMRlxUa8M6CKsnztFlGCPXmw47tW9Jb59Mtod"/>
+</div>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest mb-2">Modo Feliz</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-3">Cheesecake de fresa</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 px-4">Suave, especiado y con un toque casero que conquista. Cubierto con betún de queso crema.</p>
+<div class="flex gap-3">
+<span class="bg-primary-container/30 text-on-primary-container px-4 py-1.5 rounded-full font-label-md text-label-md">Pequeño</span>
+<span class="bg-primary-container/30 text-on-primary-container px-4 py-1.5 rounded-full font-label-md text-label-md">Grande</span>
+</div>
+</div>
+<div class="group flex flex-col items-center text-center">
+<div class="w-64 h-64 rounded-full overflow-hidden mb-8 ring-8 ring-primary-container/20 group-hover:ring-primary-container/40 transition-all duration-500">
+<img alt="Keke de chocolate" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6gHixG16RL1UQKmOhbku6v2QjhfgKu3lxePA9nQL62ULu9JLvdiwi77RyUl7vNgNT_HyyGOEbzh3xSu56X47yMBbPqyIRqzhzkNO5mOxsN111PH5zG-c_g4bRbaRe78Lxf8VY9X6CLse4iIfP6JlxWjr5ysNnOgHRMsc_YW5yk6appxUdna9OOHAzWR64uHC2btFhH8zIX8OPHZZEQKmaXLXV5MIOIqfnNW4DaSTQYdaNLYw0AOmpICzPoLtoNBpEzNr_JKzV3pdJ"/>
+</div>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest mb-2">Modo Estresada</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-3">Keke de chocolate</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 px-4">Una mezcla intensa y cremosa: chocolate oscuro y un toque de cheesecake en cada bocado.</p>
+<div class="flex gap-3">
+<span class="bg-primary-container/30 text-on-primary-container px-4 py-1.5 rounded-full font-label-md text-label-md">Pequeño</span>
+<span class="bg-primary-container/30 text-on-primary-container px-4 py-1.5 rounded-full font-label-md text-label-md">Grande</span>
+</div>
+</div>
+<div class="group flex flex-col items-center text-center">
+<div class="w-64 h-64 rounded-full overflow-hidden mb-8 ring-8 ring-primary-container/20 group-hover:ring-primary-container/40 transition-all duration-500">
+<img alt="Keke de Vainilla" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSLh1ctfzhNVSXUtT-BHZFae2WSsMvyMy9uqtI8xvl95pGrOC7VvfFLrkqd7MBaHQTip0YnJ7gKqKwjlcMWgKaTIfRWz7JdVOC4ePNGzSN6Z8E_LPpjK_u7_riD8FpAMVdARVJOQ8BiXoQwD05bx-o38owsluGnlfeg8SxDTwBYDDZFiiF7mIHJQ31mnJWVQOKtRrGM5OY6DULzKb2vQr_6UzzrsIv1R3BqHqJcTI8gt6q5mBhz9vvrk41cpkmQ3EuutdZinsvo0DY"/>
+</div>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-widest mb-2">Modo Romántico</span>
+<h3 class="font-headline-md text-headline-md text-on-background mb-3">Keke de Vainilla</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 px-4">Ligera, afrutada y con el crunch perfecto de almendras tostadas.</p>
+<div class="flex flex-col gap-2 w-full px-12">
+<div class="flex items-end w-full">
+<span class="font-body-md text-body-md text-on-surface">Pequeño</span>
 <div class="leader-line"></div>
-<span class="font-label-md text-label-md text-secondary">$32.00</span>
+<span class="font-headline-md text-[20px] text-secondary">S/25</span>
 </div>
-<p class="font-body-md text-body-md text-on-surface-variant mt-2">Capas de bizcocho húmedo con crema de chocolate belga 70%.</p>
-</div>
-<!-- Card 2 -->
-<div class="group cursor-pointer">
-<div class="aspect-square overflow-hidden rounded-2xl mb-6 bg-surface-container-high transition-all duration-500 group-hover:artisanal-shadow group-hover:-translate-y-2">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A stack of warm, golden-brown chocolate chip cookies with melted chocolate pools and a sprinkle of sea salt. The background is a soft beige linen cloth, with crumbs artfully scattered around. The lighting is soft and golden, evoking the feeling of a cozy home kitchen or high-quality artisanal bakery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_VoxU52JQU9iAmxqnJZRM-wm0JF1vADciTnPL93k2NavQ5uZz5JEzKpwyR661Gkn02mKxE-uR8KgT7OzKNdyZGFui0Rw3eornfTwWG15-_bFf1sDSEajiWJrMrqUCWrBn7Vqkpn8NT-qrOnOdQUHs7KUsNTbk6iGrN85slaG0Y8xo1LE6Cd5cQCW1eTmI2eJPMcP-m5rkW4QOBxFUGD-nU3JuEP5Lnv0T2qie0gr23tXd-PpJkAWlzzx0Ba_QScC6jaHHcVpxcO08"/>
-</div>
-<div class="flex items-center">
-<h3 class="font-headline-md text-headline-md text-on-surface">Galletas de Mantequilla</h3>
+<div class="flex items-end w-full">
+<span class="font-body-md text-body-md text-on-surface">Grande</span>
 <div class="leader-line"></div>
-<span class="font-label-md text-label-md text-secondary">$14.00</span>
+<span class="font-headline-md text-[20px] text-secondary">S/35</span>
 </div>
-<p class="font-body-md text-body-md text-on-surface-variant mt-2">La receta secreta de Franky, con un toque de sal marina y vainilla.</p>
 </div>
-<!-- Card 3 -->
-<div class="group cursor-pointer">
-<div class="aspect-square overflow-hidden rounded-2xl mb-6 bg-surface-container-high transition-all duration-500 group-hover:artisanal-shadow group-hover:-translate-y-2">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Assorted French macarons in pastel shades of strawberry pink, lemon yellow, and pistachio green, arranged elegantly on a decorative ceramic tray. The scene is bright and airy with high-key lighting, capturing the delicate texture of the almond shells. The aesthetic is clean and luxurious." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyUZEPTrSC5Z6BWYig1KfVV3p7X2e9ihVCW7lhReNHumEGMbeg8j5yl61VG9Cft0pqjetLxvUM0LkTMvZaZUrB3fweMU_HEH83Md2SVhMNyaPY_rQj38y_5kXviWKflYjyHZTNKDxFUmY2AKOanmjFV0aXrvTrID58UnO5Wf6mS60hAb3pxtyFR3EUptigRQFUHlmCjyUIAon48A5fdd-53ovNS1-a3AwZ18I3Efsj0qUnS8g01VTqezj0ZxtIEauhEuB9veTRsc6Z"/>
-</div>
-<div class="flex items-center">
-<h3 class="font-headline-md text-headline-md text-on-surface">Macarons de Temporada</h3>
-<div class="leader-line"></div>
-<span class="font-label-md text-label-md text-secondary">$18.00</span>
-</div>
-<p class="font-body-md text-body-md text-on-surface-variant mt-2">Caja de 6 unidades con sabores cítricos y florales de la estación.</p>
 </div>
 </div>
 </section>
-<!-- Custom Orders Section -->
-<section class="py-24 px-margin-mobile md:px-margin-desktop" id="custom">
-<div class="max-w-container-max mx-auto bg-secondary text-on-secondary rounded-[3rem] overflow-hidden artisanal-shadow flex flex-col md:flex-row">
-<div class="md:w-1/2 p-12 md:p-20 flex flex-col justify-center">
-<span class="font-label-md text-label-md text-secondary-container tracking-widest mb-6 block uppercase">HECHO PARA TI</span>
-<h2 class="font-display-lg text-headline-lg text-on-secondary mb-6">Tu evento, nuestro toque dulce</h2>
-<p class="font-body-lg text-body-lg text-on-secondary/80 mb-10 leading-relaxed">
-          Desde bodas íntimas hasta grandes celebraciones, personalizamos cada detalle para que tu pastel sea tan único como tu momento. Cuéntanos tu idea y nosotros la horneamos.
-        </p>
-<div class="flex items-center gap-6">
-<button class="bg-on-secondary text-secondary px-8 py-4 rounded-full font-label-md text-label-md hover:bg-secondary-container transition-colors" onclick="location.href='#contact'">
-            Solicitar Presupuesto
-          </button>
-<a class="flex items-center gap-2 group font-label-md text-label-md" href="#">
-            Ver Portafolio
-            <span class="material-symbols-outlined transition-transform group-hover:translate-x-2">arrow_forward</span>
-</a>
+<section class="py-24 bg-surface-container-low overflow-hidden" id="nosotros">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="absolute -top-12 -left-12 w-64 h-64 bg-primary-container/20 rounded-full z-0"></div>
+<img class="relative z-10 rounded-2xl shadow-2xl w-full h-[500px] object-cover" data-alt="A candid, warm-toned photograph of a skilled artisan baker's hands dusted with flour, gently kneading soft dough on a rustic wooden countertop. The background shows a cozy, inviting bakery environment with cooling racks of golden-brown pastries. Soft, natural morning light pours in from a nearby window, creating long, soft shadows and highlighting the organic textures of the flour and wood. The overall aesthetic is one of slow-living, authenticity, and handcrafted care." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCbaxrpptB4STi1W1mjXlUi0dt2fVFAOc9Uf4MmFx6A6ilhICapFSrzCRWABgNLxDltXgC-2CvWsB1bsimef-U3QWuE-gC4yN3P0xy7H1zkdE7bwK7B1yritmj-K-U1A8ERE6gUAgGiXDzL30lcs4gdFtQDP7qG1fT498_nsTyF5Cl_9pjRe-tDaA7LDjbvspX2CFveHkYkU8W111DUtuLrnY0yOYi17f38M2NcWwcSUJ5CuT4tq1mFLCqL5_Pop3MgOT3i2DbUhfmn"/>
+<div class="absolute -bottom-6 -right-6 bg-secondary p-8 rounded-2xl text-on-secondary shadow-xl z-20 hidden lg:block">
+<p class="font-headline-md text-headline-md mb-1 italic">Desde 2012</p>
+<p class="font-label-md text-label-md uppercase tracking-widest">Tradición Familiar</p>
 </div>
 </div>
-<div class="md:w-1/2 relative h-[400px] md:h-auto">
-<img class="absolute inset-0 w-full h-full object-cover" data-alt="A beautifully decorated minimalist wedding cake on a clean white background. The cake is adorned with fresh eucalyptus branches and white flowers, reflecting a modern, elegant, and personalized event style. The lighting is bright and clean, emphasizing purity and high-end design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpN_RY24YJXfVKipu4NiDvnfKWd6ilgjJM_5RrnhxdstGa89hhLZ9af-n_5g0dBuBwbmh-QdYU6OXLYB5nFvnvskosh7kHnm8Fv1Mo_J0IDmhii03gB1GZhn75Vn7izfsqLAhRKT_1GrZFktVXFoH_RhLxhoLYSrrFZwcfnXs05Giw930xGIVk5B1g5WXTEztKALKVujPknJL6RooYqLOtBLScR9s6Ln60QBiBPAcMtvITuJf2D5gnpeBP34UX7fONk4uawjqzlEny"/>
+<div>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-[0.2em] mb-4 block">Nuestra Esencia</span>
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-8 leading-tight">Hecho con el corazón, servido con alma.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 leading-relaxed">
+                        Franky's Bakery nació en una pequeña cocina familiar con un sueño simple: devolverle al mundo el sabor de lo auténtico. No creemos en la producción en masa, creemos en la paciencia, en el aroma que inunda la casa al amanecer y en la sonrisa de quien prueba un bocado de nostalgia.
+                    </p>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 leading-relaxed italic border-l-4 border-primary-container pl-6">
+                        "Nuestra misión es endulzar los momentos más importantes de tu vida con la calidez de lo artesanal."
+                    </p>
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-full font-label-md text-label-md shadow-md hover:opacity-90 transition-all">
+                        Conoce a nuestro equipo
+                    </button>
 </div>
 </div>
 </section>
-<!-- Footer Section -->
-<section class="py-24 bg-surface-container" id="contact">
+<section class="py-24 bg-surface">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-background mb-4">¿Por qué elegirnos?</h2>
+<div class="w-24 h-1 bg-primary-container mx-auto rounded-full"></div>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="bg-surface-container p-8 rounded-3xl text-center card-shadow group hover:-translate-y-2 transition-transform duration-300">
+<div class="w-16 h-16 bg-primary-container/30 text-secondary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-secondary group-hover:text-on-secondary transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl">eco</span>
+</div>
+<h4 class="font-headline-md text-[20px] text-on-background mb-4">Ingredientes frescos</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Frutas de estación y mantequillas premium seleccionadas a mano.</p>
+</div>
+<div class="bg-surface-container p-8 rounded-3xl text-center card-shadow group hover:-translate-y-2 transition-transform duration-300">
+<div class="w-16 h-16 bg-primary-container/30 text-secondary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-secondary group-hover:text-on-secondary transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl">brush</span>
+</div>
+<h4 class="font-headline-md text-[20px] text-on-background mb-4">Diseño personalizado</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Cada pedido es una obra de arte única creada para tu celebración.</p>
+</div>
+<div class="bg-surface-container p-8 rounded-3xl text-center card-shadow group hover:-translate-y-2 transition-transform duration-300">
+<div class="w-16 h-16 bg-primary-container/30 text-secondary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-secondary group-hover:text-on-secondary transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl">favorite</span>
+</div>
+<h4 class="font-headline-md text-[20px] text-on-background mb-4">Hecho con cariño</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Horneamos en lotes pequeños para asegurar la máxima calidad.</p>
+</div>
+<div class="bg-surface-container p-8 rounded-3xl text-center card-shadow group hover:-translate-y-2 transition-transform duration-300">
+<div class="w-16 h-16 bg-primary-container/30 text-secondary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:bg-secondary group-hover:text-on-secondary transition-colors duration-300">
+<span class="material-symbols-outlined text-3xl">redeem</span>
+</div>
+<h4 class="font-headline-md text-[20px] text-on-background mb-4">Perfecto para regalar</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Empaques ecológicos y elegantes listos para sorprender.</p>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface-container-high" id="contacto">
 <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-<div class="max-w-3xl mx-auto text-center mb-12">
-<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Contacto</h2>
-<p class="font-body-md text-body-md text-on-surface-variant">¿Tienes alguna pregunta o quieres hacer un pedido especial? Escríbenos y te responderemos lo antes posible.</p>
+<div class="bg-surface rounded-[40px] overflow-hidden shadow-2xl grid md:grid-cols-2">
+<div class="p-12 md:p-20"><h2 class="font-headline-lg text-headline-lg text-on-background mb-4">Contáctenos</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">Estamos ansiosos por ser parte de tu próximo momento especial. Déjanos un mensaje y te responderemos pronto.</p>
+<form class="space-y-6">
+<div>
+<label class="block font-label-md text-label-md text-secondary uppercase mb-2" for="name">Nombre</label>
+<input class="w-full bg-surface-container-low border-outline-variant/30 rounded-lg py-3 px-4 focus:ring-secondary focus:border-secondary transition-all font-body-md" id="name" name="name" placeholder="Tu nombre completo" type="text"/>
 </div>
-<form class="max-w-2xl mx-auto space-y-6">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-<div class="space-y-2">
-<label class="font-label-md text-label-md text-on-surface" for="name">Nombre</label>
-<input class="w-full bg-background border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary rounded-xl px-4 py-3 font-body-md" id="name" name="name" placeholder="Tu nombre" type="text"/>
+<div>
+<label class="block font-label-md text-label-md text-secondary uppercase mb-2" for="email">Email</label>
+<input class="w-full bg-surface-container-low border-outline-variant/30 rounded-lg py-3 px-4 focus:ring-secondary focus:border-secondary transition-all font-body-md" id="email" name="email" placeholder="tu@email.com" type="email"/>
 </div>
-<div class="space-y-2">
-<label class="font-label-md text-label-md text-on-surface" for="email">Email</label>
-<input class="w-full bg-background border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary rounded-xl px-4 py-3 font-body-md" id="email" name="email" placeholder="tu@email.com" type="email"/>
+<div>
+<label class="block font-label-md text-label-md text-secondary uppercase mb-2" for="subject">Asunto</label>
+<input class="w-full bg-surface-container-low border-outline-variant/30 rounded-lg py-3 px-4 focus:ring-secondary focus:border-secondary transition-all font-body-md" id="subject" name="subject" placeholder="¿En qué podemos ayudarte?" type="text"/>
 </div>
+<div>
+<label class="block font-label-md text-label-md text-secondary uppercase mb-2" for="message">Mensaje</label>
+<textarea class="w-full bg-surface-container-low border-outline-variant/30 rounded-lg py-3 px-4 focus:ring-secondary focus:border-secondary transition-all font-body-md resize-none" id="message" name="message" placeholder="Escribe tu mensaje aquí..." rows="4"></textarea>
 </div>
-<div class="space-y-2">
-<label class="font-label-md text-label-md text-on-surface" for="subject">Asunto</label>
-<input class="w-full bg-background border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary rounded-xl px-4 py-3 font-body-md" id="subject" name="subject" placeholder="¿En qué podemos ayudarte?" type="text"/>
-</div>
-<div class="space-y-2">
-<label class="font-label-md text-label-md text-on-surface" for="message">Mensaje</label>
-<textarea class="w-full bg-background border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary rounded-xl px-4 py-3 font-body-md" id="message" name="message" placeholder="Cuéntanos más sobre tu consulta..." rows="4"></textarea>
-</div>
-<div class="text-center pt-4">
-<button class="bg-secondary text-on-secondary px-12 py-4 rounded-full font-label-md text-label-md artisanal-shadow hover:scale-105 transition-all" type="submit">
-          Enviar Mensaje
-        </button>
-</div>
-</form>
-</div>
-</section><footer class="bg-surface-container-high dark:bg-surface-dim full-width py-12">
-<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-<div class="space-y-4">
-<span class="font-headline-md text-headline-md text-secondary dark:text-secondary-fixed">Franky's Bakery</span>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
-          © 2024 Franky's Bakery. Handcrafted with heart. Creamos experiencias dulces que perduran en la memoria.
-        </p>
-</div>
-<div class="flex flex-col gap-4">
-<h4 class="font-label-md text-label-md text-on-surface font-bold">Explora</h4>
-<div class="flex flex-col gap-2">
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline decoration-secondary/30 transition-all" href="#">Privacy Policy</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline decoration-secondary/30 transition-all" href="#">Terms of Service</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline decoration-secondary/30 transition-all" href="#">Shipping Info</a>
-<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline decoration-secondary/30 transition-all" href="#">Sustainability</a>
+<button class="w-full bg-secondary text-on-secondary py-4 rounded-full font-label-md text-label-md shadow-md hover:shadow-lg hover:opacity-95 transition-all active:scale-[0.98]" type="submit">
+        Enviar Mensaje
+    </button>
+</form></div>
+<div class="h-full min-h-[400px]">
+<img class="w-full h-full object-cover" data-alt="An interior shot of a boutique artisan bakery storefront during the golden hour. The space features warm wooden shelving filled with freshly baked loaves and jars of preserves. A vintage-style glass display counter shows off colorful cakes and pastries under warm, focused pendant lighting. The atmosphere is quiet, inviting, and sophisticated, reflecting a high-end neighborhood bakehouse aesthetic. The camera angle is wide, capturing the depth and tactile richness of the materials." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXhbWMdzVCuHOcK22TafTv060AHkq5jOTCYyySXcBBYeRXIB-WrVRhSNOJEMl99CbzJJHBI_dLG54Pwun6nv1Mke4n150W1BhqH6vK3Nb6fGaMcRsyk1UefWA4LPRDA9Oq2aHhJpCSvteWnw4etnQmQhxmPVhKc0PiFp_imbhQz3YOOkJE43y9Z5ZOfu2rHABVT-pHpE4Xofq7552LfMsdE8hXP33quVmcajyIRUvdUZRe3_jxyX48COTs764UotRdR-QOrANBns-3"/>
 </div>
 </div>
-<div class="flex flex-col gap-4">
-<h4 class="font-label-md text-label-md text-on-surface font-bold">Visítanos</h4>
-<p class="font-body-md text-body-md text-on-surface-variant">
-          Calle de los Dulces, 42<br/>
-          Madrid, España<br/>
-          Lun - Sáb: 08:00 - 20:00
-        </p>
-<div class="flex gap-4 mt-2">
-<a class="text-secondary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">share</span></a>
-<a class="text-secondary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">photo_camera</span></a>
-<a class="text-secondary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">mail</span></a>
+</div>
+</section>
+</main>
+<footer class="bg-surface-container-high py-16 border-t border-outline-variant/20">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="flex flex-col items-center md:items-start">
+<img alt="Franky's Bakery Logo" class="h-14 w-auto mb-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCb6q9bfPBzNCAxPUd6fq-Pb8_GNbHTX5Oif70G-WFYGCfq7cBg8wNFiS_s0hGx2LM4J16hCOXl6s8CEdGERzOEAitUcn_F73wmtbY-prpWmgzdsEIbaVR4VVEx9GVbZ2qH1AqE4Xjwf3JSSq3HGDo9fS2QLxZjy9Lg9C9AaPwrM2bv37FRRsAwSgX6AU1l8JjlKZ0jze0VBb3bh79q5UzWZyO7mey6xXoHcnO-xTpNtzwKRC4lvIpzzQgNw4o2CGdLouWhggZBvM0z"/>
+<p class="font-body-md text-body-md text-on-surface-variant text-center md:text-left">
+                    Handcrafted with heart since 2012. Llevando dulzura artesanal a cada rincón de tu hogar.
+                </p>
+</div>
+<div class="flex flex-col items-center md:items-start">
+<h5 class="font-label-md text-label-md text-secondary uppercase tracking-widest mb-6">Enlaces Rápidos</h5>
+<ul class="space-y-4 text-center md:text-left">
+<li><a class="text-on-surface-variant hover:text-secondary underline decoration-secondary/30 transition-all font-body-md" href="#hero">Inicio</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary underline decoration-secondary/30 transition-all font-body-md" href="#carta">Carta</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary underline decoration-secondary/30 transition-all font-body-md" href="#nosotros">Nosotros</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary underline decoration-secondary/30 transition-all font-body-md" href="#contacto">Contáctenos</a></li>
+</ul>
+</div>
+<div class="flex flex-col items-center md:items-start">
+<h5 class="font-label-md text-label-md text-secondary uppercase tracking-widest mb-6">Políticas</h5>
+<ul class="space-y-4 text-center md:text-left">
+<li><a class="text-on-surface-variant hover:text-secondary underline decoration-secondary/30 transition-all font-body-md" href="#hero">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary underline decoration-secondary/30 transition-all font-body-md" href="#hero">Terms of Service</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary underline decoration-secondary/30 transition-all font-body-md" href="#hero">Shipping Info</a></li>
+<li><a class="text-on-surface-variant hover:text-secondary underline decoration-secondary/30 transition-all font-body-md" href="#hero">Sustainability</a></li>
+</ul>
 </div>
 </div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto mt-16 pt-8 border-t border-outline-variant/30 text-center">
+<p class="font-label-md text-label-md text-on-surface-variant">
+                © 2024 Franky's Bakery. Handcrafted with heart.
+            </p>
 </div>
 </footer>
 </body></html>
