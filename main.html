@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&amp;family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .leader-line {
+      flex-grow: 1;
+      border-bottom: 1px dotted #7e766c;
+      margin: 0 8px 4px 8px;
+    }
+    .artisanal-shadow {
+      box-shadow: 0 20px 40px -10px rgba(77, 14, 19, 0.08);
+    }
+  </style>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-dim": "#e1d8d4",
+            "on-primary-fixed-variant": "#524532",
+            "on-secondary-fixed": "#3e030a",
+            "tertiary-fixed": "#e5e2de",
+            "on-tertiary-container": "#545350",
+            "on-primary": "#ffffff",
+            "on-secondary": "#ffffff",
+            "on-surface-variant": "#4d463d",
+            "primary": "#6b5c48",
+            "surface-container-highest": "#e9e1dc",
+            "primary-fixed-dim": "#d7c3ab",
+            "on-tertiary": "#ffffff",
+            "surface-variant": "#e9e1dc",
+            "on-tertiary-fixed": "#1c1c1a",
+            "error-container": "#ffdad6",
+            "secondary-fixed": "#ffdad8",
+            "on-primary-container": "#5f513e",
+            "on-surface": "#1e1b18",
+            "surface-bright": "#fff8f5",
+            "on-secondary-container": "#792f31",
+            "secondary-container": "#ff9a9a",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-high": "#efe6e2",
+            "tertiary": "#5f5e5b",
+            "on-secondary-fixed-variant": "#782f31",
+            "outline-variant": "#d0c5ba",
+            "on-primary-fixed": "#241a0a",
+            "background": "#fff8f5",
+            "on-error-container": "#93000a",
+            "secondary-fixed-dim": "#ffb3b2",
+            "error": "#ba1a1a",
+            "inverse-on-surface": "#f8efea",
+            "inverse-surface": "#34302c",
+            "tertiary-container": "#c9c7c3",
+            "on-background": "#1e1b18",
+            "outline": "#7e766c",
+            "on-error": "#ffffff",
+            "surface": "#fff8f5",
+            "surface-container": "#f5ece7",
+            "on-tertiary-fixed-variant": "#474744",
+            "secondary": "#964647",
+            "primary-fixed": "#f4dfc6",
+            "surface-tint": "#6b5c48",
+            "inverse-primary": "#d7c3ab",
+            "primary-container": "#d8c4ac",
+            "surface-container-low": "#fbf2ed",
+            "tertiary-fixed-dim": "#c8c6c2"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin-desktop": "64px",
+            "unit": "8px",
+            "margin-mobile": "20px",
+            "container-max": "1280px",
+            "gutter": "24px"
+          },
+          "fontFamily": {
+            "body-lg": ["Be Vietnam Pro"],
+            "label-md": ["Be Vietnam Pro"],
+            "caption": ["Be Vietnam Pro"],
+            "headline-md": ["EB Garamond"],
+            "display-lg": ["EB Garamond"],
+            "headline-lg": ["EB Garamond"],
+            "body-md": ["Be Vietnam Pro"],
+            "headline-lg-mobile": ["EB Garamond"]
+          },
+          "fontSize": {
+            "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+            "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+            "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+            "headline-md": ["28px", {"lineHeight": "1.3", "fontWeight": "500"}],
+            "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+            "headline-lg": ["40px", {"lineHeight": "1.2", "fontWeight": "500"}],
+            "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+            "headline-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}]
+          }
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar Section -->
+<nav class="bg-surface/90 dark:bg-surface-container-highest/90 docked full-width top-0 sticky backdrop-blur-md border-b border-outline-variant/30 shadow-sm z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+<div class="flex items-center gap-4">
+<span class="font-headline-md text-headline-md text-secondary dark:text-secondary-fixed">Franky's Bakery</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-secondary font-semibold border-b-2 border-secondary pb-1 font-body-md text-body-md" href="#essence">Our Essence</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#menu">Menu</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#custom">Custom Orders</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors font-body-md text-body-md" href="#contact">Contact</a>
+</div>
+<button class="bg-secondary text-on-secondary px-6 py-2.5 rounded-full font-label-md text-label-md shadow-sm active:scale-95 transition-transform hover:bg-secondary/90" onclick="location.href='#contact'">
+        Order Now
+      </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-[85vh] flex items-center overflow-hidden pt-16">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover" data-alt="A luxurious close-up of a multi-tiered artisanal cake decorated with delicate fresh berries and edible gold leaf. The lighting is warm and natural, casting soft shadows on a cream-colored linen surface. The overall mood is sophisticated and warm, perfectly capturing the high-end patisserie aesthetic of Franky's Bakery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAw9vtKRluWvMmBsbXqHQvJgMpHxsBg4rT-ea_YAyxm_68leYvPKJnUlqSEjPrCBuKCYK292K75uy7gsBqtD70ANNNzznRT6GnJNAOPH1vlFN5rLteE9aa2RrZ6F89Ps1y5TBZJrfMUa-vbLoe2vSNfUc2k7_zAdLndtXo5Sg6FdhBVC1ShwwRGcSpwe1StsY5u5eeB-g7hsFTQ9nalk0R_gDlrJ1EXBJFEio2iv9wTt4U36Y6Nhr4z-kufWK9iAorhogTZtQqdsWIH"/>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
+</div>
+<div class="relative z-10 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full">
+<div class="max-w-2xl">
+<img alt="Franky's Bakery Logo" class="w-48 mb-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4c_NQVXe_fXxRhEZ57bIQX7pcUbcusCR60FL1vqXoA3iR-FjEiJBKM17NJv36M0OahvlKS4a_CXkjjMQVhCcIKSroUjCFRyDhpp5DMJb7D1B_KaesgniXXrywUosuY_hfT1uxIwXPEFlogc9kQzBhO7NG6XconwcJePfJX8J47pYsGHkPy3OrjFGq4xxcBd2KCcnPXTb0afTbhwOa_7DDB133294itbAcTPWwhtuN_70x1DuiUPN1CjNVMDatkSpy_vrXp-ztHlfR"/>
+<h1 class="font-display-lg text-display-lg text-on-surface mb-6 leading-tight">
+          Repostería artesanal <span class="italic text-secondary">con corazón</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-md">
+          Delicias horneadas lentamente con ingredientes de primera calidad, creadas para celebrar los momentos más dulces de la vida.
+        </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-secondary text-on-secondary px-10 py-4 rounded-full font-label-md text-label-md artisanal-shadow hover:scale-105 transition-all" onclick="location.href='#contact'">
+            Hacer un Pedido
+          </button>
+<button class="border-2 border-secondary text-secondary px-10 py-4 rounded-full font-label-md text-label-md hover:bg-secondary/5 transition-all" onclick="location.href='#menu'">
+            Ver el Menú
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Essence Section -->
+<section class="py-24 bg-surface-container-low overflow-hidden" id="essence">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid md:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="aspect-[4/5] rounded-t-[10rem] overflow-hidden artisanal-shadow">
+<img class="w-full h-full object-cover" data-alt="A master baker's hands dusted with flour as they gently knead soft dough on a rustic wooden countertop. The scene is illuminated by the golden morning light of a traditional bakery, emphasizing the artisanal and tactile nature of the work. The color palette is warm with beige and earthy brown tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXwOaGbvHEzi9h4yiom-I0t_MDqAWtANd5ysH1YqP2FK1Bqe8ofpYfHNCSJCCHw_xSkalMnfbvoYBosyr5CYuUNpYVahRfdjyLn97bXS924N8EKNY_xAUk6-5nL90gNZImNWv5ZJrhHXONUe5IkI4vDubTm9qwS7rQljhOrgeYlg9FfWO1-rM5g3Ft1WWIyAe2UHP_Bpk6fwiyUFK2LPekuJSS4-7Ifmm7tf3P1iioKaGTL2fx-Fnwgze9IEEExR4E7RCGncd2b5dV"/>
+</div>
+<div class="absolute -bottom-10 -right-10 w-48 h-48 bg-primary-container rounded-full flex items-center justify-center p-6 text-center artisanal-shadow">
+<span class="font-headline-md text-headline-md text-on-primary-container italic">Desde 1994</span>
+</div>
+</div>
+<div class="space-y-8">
+<div>
+<span class="font-label-md text-label-md text-secondary tracking-widest mb-4 block">NUESTRA ESENCIA</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">Confianza, Cercanía y Dedicación</h2>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            En Franky's Bakery, cada receta cuenta una historia. No somos solo una pastelería; somos un refugio de sabor donde la tradición se encuentra con la innovación. 
+          </p>
+<div class="grid grid-cols-1 gap-6 pt-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-3xl">favorite</span>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface mb-1">Dedicación Pura</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Cada pieza es única, hecha a mano con paciencia y amor.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary text-3xl">local_florist</span>
+<div>
+<h4 class="font-label-md text-label-md text-on-surface mb-1">Ingredientes Frescos</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">Seleccionamos lo mejor de la tierra para garantizar un sabor inigualable.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Delights Gallery -->
+<section class="py-24 bg-background" id="menu">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Nuestros Caprichos Destacados</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">Una selección de nuestras creaciones más queridas, preparadas diariamente en nuestro obrador.</p>
+</div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-square overflow-hidden rounded-2xl mb-6 bg-surface-container-high transition-all duration-500 group-hover:artisanal-shadow group-hover:-translate-y-2">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A decadent dark chocolate cake topped with glossy ganache and fresh raspberries. The cake sits on a marble pedestal, photographed with high contrast and moody, warm lighting that highlights the textures of the sponge and glaze. The style is elegant and sophisticated for a high-end bakery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzcaQovGemU5JqqC_Sk6VTVNh05rIvZAN3KvDVtE3Sc1Jk0yEMJxFn_J6PwDKVifISZaIW9yw1jgXAmtHP5_qGPgNrrWs1MDoptFQ2cv7fD8XeIMsoKWtZMyvDV8R8VCfKdWusIRC0H6zEWjSZMQRmfJFYSxXK4Hx8QJ_wmshW6swkcESkt_8enZCjuDc24x8RLpU9FjOkl0hONElIUm-jYJcKZ1hZWiduHLMvvR4JTkWYY05q23SxjImKQ-xOTFM85MhdK404Ji3R"/>
+</div>
+<div class="flex items-center">
+<h3 class="font-headline-md text-headline-md text-on-surface">Tarta de Trufa Negra</h3>
+<div class="leader-line"></div>
+<span class="font-label-md text-label-md text-secondary">$32.00</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Capas de bizcocho húmedo con crema de chocolate belga 70%.</p>
+</div>
+<!-- Card 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-square overflow-hidden rounded-2xl mb-6 bg-surface-container-high transition-all duration-500 group-hover:artisanal-shadow group-hover:-translate-y-2">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A stack of warm, golden-brown chocolate chip cookies with melted chocolate pools and a sprinkle of sea salt. The background is a soft beige linen cloth, with crumbs artfully scattered around. The lighting is soft and golden, evoking the feeling of a cozy home kitchen or high-quality artisanal bakery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_VoxU52JQU9iAmxqnJZRM-wm0JF1vADciTnPL93k2NavQ5uZz5JEzKpwyR661Gkn02mKxE-uR8KgT7OzKNdyZGFui0Rw3eornfTwWG15-_bFf1sDSEajiWJrMrqUCWrBn7Vqkpn8NT-qrOnOdQUHs7KUsNTbk6iGrN85slaG0Y8xo1LE6Cd5cQCW1eTmI2eJPMcP-m5rkW4QOBxFUGD-nU3JuEP5Lnv0T2qie0gr23tXd-PpJkAWlzzx0Ba_QScC6jaHHcVpxcO08"/>
+</div>
+<div class="flex items-center">
+<h3 class="font-headline-md text-headline-md text-on-surface">Galletas de Mantequilla</h3>
+<div class="leader-line"></div>
+<span class="font-label-md text-label-md text-secondary">$14.00</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">La receta secreta de Franky, con un toque de sal marina y vainilla.</p>
+</div>
+<!-- Card 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-square overflow-hidden rounded-2xl mb-6 bg-surface-container-high transition-all duration-500 group-hover:artisanal-shadow group-hover:-translate-y-2">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Assorted French macarons in pastel shades of strawberry pink, lemon yellow, and pistachio green, arranged elegantly on a decorative ceramic tray. The scene is bright and airy with high-key lighting, capturing the delicate texture of the almond shells. The aesthetic is clean and luxurious." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyUZEPTrSC5Z6BWYig1KfVV3p7X2e9ihVCW7lhReNHumEGMbeg8j5yl61VG9Cft0pqjetLxvUM0LkTMvZaZUrB3fweMU_HEH83Md2SVhMNyaPY_rQj38y_5kXviWKflYjyHZTNKDxFUmY2AKOanmjFV0aXrvTrID58UnO5Wf6mS60hAb3pxtyFR3EUptigRQFUHlmCjyUIAon48A5fdd-53ovNS1-a3AwZ18I3Efsj0qUnS8g01VTqezj0ZxtIEauhEuB9veTRsc6Z"/>
+</div>
+<div class="flex items-center">
+<h3 class="font-headline-md text-headline-md text-on-surface">Macarons de Temporada</h3>
+<div class="leader-line"></div>
+<span class="font-label-md text-label-md text-secondary">$18.00</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Caja de 6 unidades con sabores cítricos y florales de la estación.</p>
+</div>
+</div>
+</section>
+<!-- Custom Orders Section -->
+<section class="py-24 px-margin-mobile md:px-margin-desktop" id="custom">
+<div class="max-w-container-max mx-auto bg-secondary text-on-secondary rounded-[3rem] overflow-hidden artisanal-shadow flex flex-col md:flex-row">
+<div class="md:w-1/2 p-12 md:p-20 flex flex-col justify-center">
+<span class="font-label-md text-label-md text-secondary-container tracking-widest mb-6 block uppercase">HECHO PARA TI</span>
+<h2 class="font-display-lg text-headline-lg text-on-secondary mb-6">Tu evento, nuestro toque dulce</h2>
+<p class="font-body-lg text-body-lg text-on-secondary/80 mb-10 leading-relaxed">
+          Desde bodas íntimas hasta grandes celebraciones, personalizamos cada detalle para que tu pastel sea tan único como tu momento. Cuéntanos tu idea y nosotros la horneamos.
+        </p>
+<div class="flex items-center gap-6">
+<button class="bg-on-secondary text-secondary px-8 py-4 rounded-full font-label-md text-label-md hover:bg-secondary-container transition-colors" onclick="location.href='#contact'">
+            Solicitar Presupuesto
+          </button>
+<a class="flex items-center gap-2 group font-label-md text-label-md" href="#">
+            Ver Portafolio
+            <span class="material-symbols-outlined transition-transform group-hover:translate-x-2">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="md:w-1/2 relative h-[400px] md:h-auto">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A beautifully decorated minimalist wedding cake on a clean white background. The cake is adorned with fresh eucalyptus branches and white flowers, reflecting a modern, elegant, and personalized event style. The lighting is bright and clean, emphasizing purity and high-end design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpN_RY24YJXfVKipu4NiDvnfKWd6ilgjJM_5RrnhxdstGa89hhLZ9af-n_5g0dBuBwbmh-QdYU6OXLYB5nFvnvskosh7kHnm8Fv1Mo_J0IDmhii03gB1GZhn75Vn7izfsqLAhRKT_1GrZFktVXFoH_RhLxhoLYSrrFZwcfnXs05Giw930xGIVk5B1g5WXTEztKALKVujPknJL6RooYqLOtBLScR9s6Ln60QBiBPAcMtvITuJf2D5gnpeBP34UX7fONk4uawjqzlEny"/>
+</div>
+</div>
+</section>
+<!-- Footer Section -->
+<section class="py-24 bg-surface-container" id="contact">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="max-w-3xl mx-auto text-center mb-12">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Contacto</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">¿Tienes alguna pregunta o quieres hacer un pedido especial? Escríbenos y te responderemos lo antes posible.</p>
+</div>
+<form class="max-w-2xl mx-auto space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface" for="name">Nombre</label>
+<input class="w-full bg-background border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary rounded-xl px-4 py-3 font-body-md" id="name" name="name" placeholder="Tu nombre" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface" for="email">Email</label>
+<input class="w-full bg-background border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary rounded-xl px-4 py-3 font-body-md" id="email" name="email" placeholder="tu@email.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface" for="subject">Asunto</label>
+<input class="w-full bg-background border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary rounded-xl px-4 py-3 font-body-md" id="subject" name="subject" placeholder="¿En qué podemos ayudarte?" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-md text-label-md text-on-surface" for="message">Mensaje</label>
+<textarea class="w-full bg-background border-outline-variant focus:border-secondary focus:ring-1 focus:ring-secondary rounded-xl px-4 py-3 font-body-md" id="message" name="message" placeholder="Cuéntanos más sobre tu consulta..." rows="4"></textarea>
+</div>
+<div class="text-center pt-4">
+<button class="bg-secondary text-on-secondary px-12 py-4 rounded-full font-label-md text-label-md artisanal-shadow hover:scale-105 transition-all" type="submit">
+          Enviar Mensaje
+        </button>
+</div>
+</form>
+</div>
+</section><footer class="bg-surface-container-high dark:bg-surface-dim full-width py-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="space-y-4">
+<span class="font-headline-md text-headline-md text-secondary dark:text-secondary-fixed">Franky's Bakery</span>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xs">
+          © 2024 Franky's Bakery. Handcrafted with heart. Creamos experiencias dulces que perduran en la memoria.
+        </p>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md text-on-surface font-bold">Explora</h4>
+<div class="flex flex-col gap-2">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline decoration-secondary/30 transition-all" href="#">Privacy Policy</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline decoration-secondary/30 transition-all" href="#">Terms of Service</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline decoration-secondary/30 transition-all" href="#">Shipping Info</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-secondary underline decoration-secondary/30 transition-all" href="#">Sustainability</a>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-label-md text-label-md text-on-surface font-bold">Visítanos</h4>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Calle de los Dulces, 42<br/>
+          Madrid, España<br/>
+          Lun - Sáb: 08:00 - 20:00
+        </p>
+<div class="flex gap-4 mt-2">
+<a class="text-secondary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">share</span></a>
+<a class="text-secondary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+<a class="text-secondary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">mail</span></a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
